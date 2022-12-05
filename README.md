@@ -28,9 +28,13 @@ JWT Auth (for the purposes of finishing a demo version, the website will already
 Geoapify API (generate GPS coordinates for user’s city so that the coordinates can be sent to Plotly.js map, which will confirm which plant hardiness zone users live in)
 
 🌱 Server End Points
+
+
 <img width="678" alt="image" src="https://user-images.githubusercontent.com/112671806/205554145-054c0f52-ff94-4228-afef-5724750d885f.png">
 
 🌱 Database Structure
+
+
 <img width="674" alt="image" src="https://user-images.githubusercontent.com/112671806/205554292-ac312528-6095-40b6-808e-cf24dcc70919.png">
 
 🌱 Client Side Implementation --> See my frontend Github folder for more information! https://github.com/meredith-j/meredith-jonatan-grow-a-pear-frontend
