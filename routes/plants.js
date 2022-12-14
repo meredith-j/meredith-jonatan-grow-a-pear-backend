@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const cors = require("cors")
-// const plantsController = require("./controllers/plantsController.js");
+const plantsController = require("../controllers/plantsController");
+const getZone = require("../middleware/getZone")
 
-// router
-//     .route("/")
-//     .get(plantsController.getAll)
+router
+    .route("/")
+        .post(getZone, plantsController.getPlants)
 
-//     module.exports = router;
+
+module.exports = router;
