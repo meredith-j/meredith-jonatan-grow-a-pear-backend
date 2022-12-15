@@ -7,8 +7,8 @@ exports.up = function(knex) {
     .createTable('plant_details', (table) => {
       table.increments('id').primary();
       table.string('name').notNullable();
-      table.string('care_instructions').notNullable();
-      table.string('info').notNullable();
+      table.text('care_instructions').notNullable();
+      table.text('info').notNullable();
       table.string('category').notNullable();
       table.boolean('needs_trellis').notNullable();
       table.string('image').notNullable;
@@ -39,6 +39,8 @@ exports.up = function(knex) {
       table.integer('zone_7a');
       table.integer('zone_7b');
       table.integer('zone_8a');
+      table.integer('zone_8b');
+      table.integer('zone_9a');
     })
     .createTable('sun_exposure', (table) => {
       table.increments('id').primary();
@@ -48,11 +50,10 @@ exports.up = function(knex) {
            .onUpdate('CASCADE')
            .onDelete('CASCADE');
       table.integer('no_direct_sun');
-      table.integer('under_2_hours');
-      table.integer('2_to_4_hours');
-      table.integer('4_to_6_hours');
-      table.integer('6_to_8_hours');
-      table.integer('8_plus_hours');
+      table.integer('under_two_hours');
+      table.integer('two_to_four_hours');
+      table.integer('four_to_eight_hours');
+      table.integer('eight_plus_hours');
     })
     .createTable('user_plant_list', (table) => {
       table.increments('id').primary().notNullable();
