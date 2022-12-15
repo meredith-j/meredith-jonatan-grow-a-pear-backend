@@ -1,3 +1,57 @@
 module.exports = [
-    
+    {
+        id: 1,
+        plant_id: 1,
+        no_direct_sun: 0,
+        under_two_hours: 0,
+        two_to_four_hours: 0,
+        four_to_eight_hours: 1,
+        eight_plus_hours: 1,
+    },
+    {
+        id: 2,
+        plant_id: 2,
+        no_direct_sun: 0,
+        under_two_hours: 0,
+        two_to_four_hours: 0,
+        four_to_eight_hours: 0,
+        eight_plus_hours: 2,
+    },
+    {
+        id: 3,
+        plant_id: 3,
+        no_direct_sun: 0,
+        under_two_hours: 0,
+        two_to_four_hours: 0,
+        four_to_eight_hours: 0,
+        eight_plus_hours: 2,
+    },
+    {
+        id: 4,
+        plant_id: 4,
+        no_direct_sun: 0,
+        under_two_hours: 0,
+        two_to_four_hours: 0,
+        four_to_eight_hours: 1,
+        eight_plus_hours: 1,
+    },
+    {
+        id: 5,
+        plant_id: 5,
+        no_direct_sun: 0,
+        under_two_hours: 0,
+        two_to_four_hours: 0,
+        four_to_eight_hours: 0,
+        eight_plus_hours: 1,
+    },
 ]
+
+// {
+//     id: ,
+//     plant_id: ,
+//     no_direct_sun: ,
+//     under_two_hours: 0,
+//     two_to_four_hours: 0,
+//     four_to_eight_hours: 0,
+//     eight_plus_hours: 0,
+//   },
