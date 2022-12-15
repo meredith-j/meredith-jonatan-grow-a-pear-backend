@@ -1,22 +1,15 @@
 const knex = require("knex")(require("../knexfile"));
-const { v4: uuidv4 } = require("uuid");
 
 const getPlants = (req, res) => {
-    res.json({status:"ok",
-              body: req.body,
-              zone: req.zone})
-    // knex("______")
-    //   .join("plant_details", "perrennial_zones", "sun_exposure")
-    //   .select(
-    //     "plant_details.id",
-    //     "perrennial_zones.zone"
-    //   )
-    //   .then((data) => {
-    //     res.status(200).json(data);
-    //   })
-    //   .catch((err) => {
-    //     res.status(400).send(`Error retrieving inventory items ${err}`);
-    //   });
+    console.log("status: ok", req.body, req.zone)
+        knex("plant_details")
+        .join('perrennial_zones', "perrennial_zones.plant_id", "plant_details.id")
+        .join("sun_exposure", "sun_exposure.plant_id", "plant_details.id")
+        .where( req.zone, 1 )
+        .where( req.body.sunlight, 1 )
+        .then((response) => {
+            res.status(200).json(response)
+        })
   };
 
 module.exports = {
