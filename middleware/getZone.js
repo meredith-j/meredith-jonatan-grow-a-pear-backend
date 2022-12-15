@@ -2,6 +2,7 @@
 const axios = require('axios')
 const zones = require("../data/zoneData")
 const classifyPoint = require("robust-point-in-polygon");
+const API_KEY = process.env.API_KEY;
 
 function zoneFunction(lng, lat) {
     for (let i = 0; i < zones.length; i++) {
@@ -40,7 +41,7 @@ const getZone = (req, res, next) => {
 
     let zone;
 
-    axios.get(`https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyAWYxRBlKgP5jOOrAnkWRK2eelK4JbGg9E&address=${city}&${province}&canada&sensor=false`)
+    axios.get(`https://maps.googleapis.com/maps/api/geocode/json?key=${API_KEY}&address=${city}&${province}&canada&sensor=false`)
          .then((response) => {
 
             console.log("lat:", response.data.results[0].geometry.location.lat)
