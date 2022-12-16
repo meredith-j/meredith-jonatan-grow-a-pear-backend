@@ -1,7 +1,6 @@
 const knex = require("knex")(require("../knexfile"));
 
 const getPlants = (req, res) => {
-    console.log("status: ok", req.body, req.zone)
         knex("plant_details")
         .join('perrennial_zones', "perrennial_zones.plant_id", "plant_details.id")
         .join("sun_exposure", "sun_exposure.plant_id", "plant_details.id")
