@@ -6,14 +6,8 @@ const API_KEY = process.env.API_KEY;
 
 function zoneFunction(lng, lat) {
     for (let i = 0; i < zones.length; i++) {
-    
-    // in case i need to test again:
-    // console.log('zone', zones[i])
-    
-    let result = classifyPoint(zones[i], [lng, lat])
 
-    // in case i need to test again
-    // console.log(result)
+    let result = classifyPoint(zones[i], [lng, lat])
 
         if (result === -1 && (i < 3)) {
             return "zone_0A"
@@ -54,8 +48,6 @@ const getZone = (req, res, next) => {
 
          })
          .catch((err) =>{
-            console.log("oh no")
-
             console.log(err)
          })
 };
