@@ -1,7 +1,3 @@
-// NEXT TWO LINES ARE THE EXAMPLE THE CLASSIFY POINT NPM LIBRARY PROVIDED
-// const test = [[-74, 50], [-80, 47], [-74, 45], [-70, 47]]
-// console.log(classifyPoint(test, [-73.5698065, 45.5031824]));
-
 // HERE IS THE ARRAY OF EVERY POLYGON I HAVE PLACED ON MY MAP
 const zones = [
     // zone 0A
@@ -22,9 +18,6 @@ const zones = [
     // zone 2A
     [[-93.168665, 54.078931], [-92.543111, 54.510052], [-79.562439, 50.980639], [-79.537530, 50.271258]],
     [[-89.232486, 52.215334], [-86.661248, 51.693276], [-86.223570, 52.559890], [-89.077727, 52.973903]],
-    [[], [], [], []],
-        
-    [[], [], [], []],
     ];
 
     module.exports = zones;
