@@ -44,6 +44,33 @@ module.exports = [
         four_to_eight_hours: 0,
         eight_plus_hours: 1,
     },
+    {
+    id: 6,
+    plant_id: 6,
+    no_direct_sun: 0,
+    under_two_hours: 0,
+    two_to_four_hours: 0,
+    four_to_eight_hours: 0,
+    eight_plus_hours: 1,
+  },
+  {
+    id: 7,
+    plant_id: 7,
+    no_direct_sun: 0,
+    under_two_hours: 0,
+    two_to_four_hours: 1,
+    four_to_eight_hours: 1,
+    eight_plus_hours: 1,
+  },
+  {
+    id: 8,
+    plant_id: 8,
+    no_direct_sun: 0,
+    under_two_hours: 0,
+    two_to_four_hours: 0,
+    four_to_eight_hours: 1,
+    eight_plus_hours: 1,
+  },
 ]
 
 // {
