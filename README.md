@@ -1,7 +1,3 @@
-🌱 This project is in progress. It will be completed on December 14th, 2022. 🌱
-
-Until then, check the develop branch for the most recent updates. 💻 You can also take a look at the backend for the same project: https://github.com/meredith-j/meredith-jonatan-grow-a-pear-frontend
-
 🌱 What is Grow A Pear?
 
 When preparing for my first garden last spring, I found that it was really hard to find accurate information on what plants would work in my backyard. Answer a few simple questions about where you live and how much sun you get in your backyard – Grow a Pear will give you a list of plants that will thrive in your care!!
@@ -32,9 +28,13 @@ Geoapify API (generate GPS coordinates for user’s city so that the coordinates
 
 <img width="678" alt="image" src="https://user-images.githubusercontent.com/112671806/205554145-054c0f52-ff94-4228-afef-5724750d885f.png">
 
-🌱 Database Structure
+🌱 How to run
 
+- add your information to .env file (for BrainStation - an API key has been sent to you for the Google Maps API)
 
-<img width="674" alt="image" src="https://user-images.githubusercontent.com/112671806/205554292-ac312528-6095-40b6-808e-cf24dcc70919.png">
+in terminal:
+- install packages: npm i
+- run database migrations: npx knex migrate:latest
+- seed database: npx knex seed:run
 
 🌱 Client Side Implementation --> See my frontend Github folder for more information! https://github.com/meredith-j/meredith-jonatan-grow-a-pear-frontend
