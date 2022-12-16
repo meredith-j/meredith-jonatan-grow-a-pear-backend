@@ -44,9 +44,6 @@ const getZone = (req, res, next) => {
     axios.get(`https://maps.googleapis.com/maps/api/geocode/json?key=${API_KEY}&address=${city}&${province}&canada&sensor=false`)
          .then((response) => {
 
-            console.log("lat:", response.data.results[0].geometry.location.lat)
-            console.log("lon:", response.data.results[0].geometry.location.lng)
-
             const lat = response.data.results[0].geometry.location.lat
             const lng = response.data.results[0].geometry.location.lng
 
@@ -64,12 +61,3 @@ const getZone = (req, res, next) => {
 };
 
 module.exports = getZone;
-
-// GEOAPIFY API
-    // axios.get(`https://api.geoapify.com/v1/geocode/search?city=${city}&state=${province}&filter=countrycode:ca&apiKey=5d0ba47bf54543a3827bc40b2277159c`)
-
-    // console.log("lon:", response.data.features[0].properties.lon)
-    // console.log("lat:", response.data.features[0].properties.lat)
-
-    // const lon = response.data.features[0].properties.lon
-    // const lat = response.data.features[0].properties.lat
