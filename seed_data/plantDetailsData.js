@@ -78,7 +78,7 @@ module.exports = [
   info: "Manchurian Apricot is a winter-hardy relative of the native plum. This tree can stand some drought, but will not handle standing water or saturated moist soils. It can be used in shelterbelts, hedges, or as an ornamental. Manchurian Apricot will also attract songbirds, rabbits, and other rodents if left uncontrolled.",
   category: "Fruit",
   needs_trellis: false,
-  image: "http://localhost:8080/images/",
+  image: "http://localhost:8080/images/manchurion-apricot.jpeg",
 },
 ]
 
