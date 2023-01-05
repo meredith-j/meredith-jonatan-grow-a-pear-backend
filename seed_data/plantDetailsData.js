@@ -69,6 +69,15 @@ module.exports = [
   info: "Northline Saskatoon is a native shrub that's famous for its great-tasting fruit. The berries are terrific for fresh eating and cooking. The Saskatoon bush itself can be quite large and produces an abundance of fruit. Saskatoons are hardy and can tolerate partial shade and a variety of growing conditions.",
   category: "Berry",
   needs_trellis: false,
+  image: "http://localhost:8080/images/northline-saskatoon-berry.jpeg",
+},
+{
+  id: 9,
+  name: "Manchurian Apricot",
+  care_instructions: "TBD",
+  info: "Manchurian Apricot is a winter-hardy relative of the native plum. This tree can stand some drought, but will not handle standing water or saturated moist soils. It can be used in shelterbelts, hedges, or as an ornamental. Manchurian Apricot will also attract songbirds, rabbits, and other rodents if left uncontrolled.",
+  category: "Fruit",
+  needs_trellis: false,
   image: "http://localhost:8080/images/",
 },
 ]
