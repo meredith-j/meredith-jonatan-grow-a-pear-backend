@@ -80,6 +80,15 @@ module.exports = [
   needs_trellis: false,
   image: "http://localhost:8080/images/manchurion-apricot.jpeg",
 },
+{
+  id: 10,
+  name: "Sour Cherry",
+  care_instructions: "TBD",
+  info: "Sour Cherry is ideal for cooking, preserves, or for making juices and jams, while sweet cherries are preferred for fresh eating. While we can't confirm claims of sour cherries medical benefits, studies have shown that sour cherries contain anti-inflammatory properties and can help regulate sleep patterns.",
+  category: "Fruit",
+  needs_trellis: false,
+  image: "http://localhost:8080/images/sour-cherry.jpeg",
+},
 ]
 
 
