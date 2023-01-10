@@ -89,6 +89,15 @@ module.exports = [
   needs_trellis: false,
   image: "http://localhost:8080/images/sour-cherry.jpeg",
 },
+{
+  id: 11,
+  name: "Crimson Passion Cherry",
+  care_instructions: "TBD",
+  info: "The Crimson Passion Cherry is a hardy deciduous hybrid dwarf Sour Cherry. This medium-sized self-pollinator produces tart, bright red fruits in large clusters in late summer that are perfect for jams, pies and jellies. Crimson Passion Cherry is ideal as a landscape or orchard tree.",
+  category: "Fruit",
+  needs_trellis: false,
+  image: "http://localhost:8080/images/carmine-cherry.jpeg",
+},
 ]
 
 
