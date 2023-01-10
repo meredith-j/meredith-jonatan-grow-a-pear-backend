@@ -98,6 +98,15 @@ module.exports = [
   needs_trellis: false,
   image: "http://localhost:8080/images/carmine-cherry.jpeg",
 },
+{
+  id: 12,
+  name: "Siberean C Peach",
+  care_instructions: "TBD",
+  info: "The Siberian C Peach is a cold hardy peach cultivar, and the fruit is great for producing juice and fresh eating. This variety is native to the Gobi desert area of China, and is relatively true to seed. In colder climates they might not grow fruit reliably as they require a relatively hot summer for the fruit to produce.",
+  category: "Fruit",
+  needs_trellis: false,
+  image: "http://localhost:8080/images/siberean-peach.jpeg",
+},
 ]
 
 

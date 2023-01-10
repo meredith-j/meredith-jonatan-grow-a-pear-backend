@@ -252,6 +252,29 @@ module.exports = [
     zone_8b: 1,
     zone_9a: 1
 },
+{
+    id: 12,
+    plant_id: 12,
+    zone_0a: 0,
+    zone_0b: 0,
+    zone_1a: 0,
+    zone_1b: 0,
+    zone_2a: 0,
+    zone_2b: 0,
+    zone_3a: 0,
+    zone_3b: 0,
+    zone_4a: 1,
+    zone_4b: 1,
+    zone_5a: 1,
+    zone_5b: 1,
+    zone_6a: 1,
+    zone_6b: 1,
+    zone_7a: 1,
+    zone_7b: 1,
+    zone_8a: 1,
+    zone_8b: 1,
+    zone_9a: 1
+},
 ]
 
 // {
