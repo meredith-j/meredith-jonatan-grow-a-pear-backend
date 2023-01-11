@@ -107,6 +107,15 @@ module.exports = [
   needs_trellis: false,
   image: "http://localhost:8080/images/siberean-peach.jpeg",
 },
+{
+  id: 13,
+  name: "Goji Berry",
+  care_instructions: "TBD",
+  info: "The Dynamite Goji Berry is a thornless cultivar of the Goji Berry known for its hearty, brilliant-red berries. This deciduous perennial produces white/lavender flowers that bloom from June through September, with fruit maturation taking place between August and October. Fruit production typically starts in the second year of growth with maximum production in the fourth and fifth year. Dynamite Goji Berry berries are delicious, nutrient rich, high in antioxidants, and are often called a super fruit. Many describe their flavour as being like a tart cherry tomato.",
+  category: "Fruit",
+  needs_trellis: false,
+  image: "http://localhost:8080/images/goji_berry_dynamite.jpeg",
+},
 ]
 
 
