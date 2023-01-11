@@ -116,6 +116,15 @@ module.exports = [
   needs_trellis: false,
   image: "http://localhost:8080/images/goji_berry_dynamite.jpeg",
 },
+{
+  id: 14,
+  name: "Beaked Hazelnut",
+  care_instructions: "TBD",
+  info: "Beaked Hazelnut is a multi-stemmed, deciduous shrub native to North America. It features smooth, grey bark and edible nuts. Beaked Hazelnut prefers a rich sandy-clay loam but will grow on poorer sites, and can be used as an understory shrub. Note: You want more than one hazelnut to improve yields.",
+  category: "Nut",
+  needs_trellis: false,
+  image: "http://localhost:8080/images/hazelnut_beaked.jpeg",
+},
 ]
 
 
