@@ -141,7 +141,7 @@ module.exports = [
   info: "The Northern Red Currant is also known as the Swamp Red currant due to its preference for moist soil. As long as the soil is wet, this shrub can live in any degree of sunlight.",
   category: "Fruit",
   needs_trellis: false,
-  image: "http://localhost:8080/images/",
+  image: "http://localhost:8080/images/currant_northern_red.jpeg",
 },
 ]
 
