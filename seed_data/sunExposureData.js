@@ -134,6 +134,15 @@ module.exports = [
     four_to_eight_hours: 1,
     eight_plus_hours: 1,
   },
+  {
+    id: 16,
+    plant_id: 16,
+    no_direct_sun: 1,
+    under_two_hours: 1,
+    two_to_four_hours: 1,
+    four_to_eight_hours: 1,
+    eight_plus_hours: 1,
+  },
 ]
 
 // {

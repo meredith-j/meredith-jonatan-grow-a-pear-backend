@@ -134,6 +134,15 @@ module.exports = [
   needs_trellis: false,
   image: "http://localhost:8080/images/cranberry_bog.jpeg",
 },
+{
+  id: 16,
+  name: "Northern Red Currant",
+  care_instructions: "TBD",
+  info: "The Northern Red Currant is also known as the Swamp Red currant due to its preference for moist soil. As long as the soil is wet, this shrub can live in any degree of sunlight.",
+  category: "Fruit",
+  needs_trellis: false,
+  image: "http://localhost:8080/images/",
+},
 ]
 
 
