@@ -125,6 +125,15 @@ module.exports = [
   needs_trellis: false,
   image: "http://localhost:8080/images/hazelnut_beaked.jpeg",
 },
+{
+  id: 15,
+  name: "Bog Cranberry",
+  care_instructions: "TBD",
+  info: "Bog Cranberry is a native, ground cover species. These plants generally produce one crop per year in summer. Plants may spread 3 feet in width forming a dense mat which makes it attractive as an ornamental ground cover. Bog Cranberry flowers are similar in shape to those of blueberry and may be white or pink in color. These berries are considered to be highly flavored but not as tart as cranberries.",
+  category: "fruit",
+  needs_trellis: false,
+  image: "http://localhost:8080/images/cranberry_bog.jpeg",
+},
 ]
 
 
