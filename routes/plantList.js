@@ -7,5 +7,8 @@ router
         .get(listController.getList)
         .post(listController.postList);
 
+router
+    .route("/:id")
+
 
 module.exports = router;

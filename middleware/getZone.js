@@ -24,6 +24,22 @@ function zoneFunction(lng, lat) {
         if (result === -1 && (i < 12)) {
             return "zone_2A"
         }
+
+        if (result === -1 && (i < 13)) {
+            return "zone_3A"
+        }
+        if (result === -1 && (i < 14)) {
+            return "zone_4A"
+        }
+        if (result === -1 && (i < 15)) {
+            return "zone_5A"
+        }
+        if (result === -1 && (i < 16)) {
+            return "zone_5B"
+        }
+        if (result === -1 && (i < 17)) {
+            return "zone_6A"
+        }
     }
 };
 
