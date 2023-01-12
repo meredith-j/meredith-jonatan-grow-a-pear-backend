@@ -10,6 +10,8 @@ const knex = require("knex")(require("../knexfile"));
 //   };
 
 const postList = (req, res) => {
+    console.log(req.body);
+
 //     knex("user_list")
 //     .join("plant_list", "plant_list.list_id", "user_list.id")
 //     .where({ plant_id: req.params.id })
@@ -22,10 +24,9 @@ const postList = (req, res) => {
 //     })
 // }
           
-    const { name } = req.body.name;
+    const list_name = req.body.list_name;
       knex('user_list')
-      .insert({name})
-      .returning('id')
+      .insert({list_name})
       .then(([listId]) => {
         // Use the generated list ID to insert the items into the "items" table
         const plants = req.body.plants.map(plant => ({
@@ -33,7 +34,8 @@ const postList = (req, res) => {
           plant_id: plant.id,
           list_id: listId
            }));
-        return knex('items').insert(items);
+        return knex('user_plants')
+            .insert({plant_id:plants, list_id:listId});
         })
       .then((response) => {
         res.status(200).json(response)
