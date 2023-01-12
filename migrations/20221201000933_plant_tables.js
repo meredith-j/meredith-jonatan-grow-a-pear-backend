@@ -16,7 +16,6 @@ exports.up = function(knex) {
       table.timestamp('updated_on').defaultTo(knex.fn.now());
     })
     .createTable('perrennial_zones', (table) => {
-      table.increments('id').primary();
       table.integer('plant_id').unsigned().notNullable();
       table.foreign('plant_id')
            .references('plant_details.id')
@@ -43,7 +42,6 @@ exports.up = function(knex) {
       table.integer('zone_9a');
     })
     .createTable('sun_exposure', (table) => {
-      table.increments('id').primary();
       table.integer('plant_id').unsigned().notNullable();
       table.foreign('plant_id')
            .references('plant_details.id')
@@ -55,8 +53,16 @@ exports.up = function(knex) {
       table.integer('four_to_eight_hours');
       table.integer('eight_plus_hours');
     })
-    .createTable('user_plant_list', (table) => {
+    .createTable('user_list', (table) => {
       table.increments('id').primary().notNullable();
+      table.text('list_name').notNullable();      
+    })
+    .createTable('user_plants', (table) => {
+      table.integer('list_id').unsigned().notNullable();
+      table.foreign('list_id')
+           .references('user_list.id')
+           .onUpdate('CASCADE')
+           .onDelete('CASCADE');
       table.integer('plant_id').unsigned().notNullable();
       table.foreign('plant_id')
            .references('plant_details.id')

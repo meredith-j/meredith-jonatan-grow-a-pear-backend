@@ -1,6 +1,5 @@
 module.exports = [
     {
-        id: 1,
         plant_id: 1,
         no_direct_sun: 0,
         under_two_hours: 0,
@@ -9,7 +8,6 @@ module.exports = [
         eight_plus_hours: 1,
     },
     {
-        id: 2,
         plant_id: 2,
         no_direct_sun: 0,
         under_two_hours: 0,
@@ -18,7 +16,6 @@ module.exports = [
         eight_plus_hours: 2,
     },
     {
-        id: 3,
         plant_id: 3,
         no_direct_sun: 0,
         under_two_hours: 0,
@@ -27,7 +24,6 @@ module.exports = [
         eight_plus_hours: 2,
     },
     {
-        id: 4,
         plant_id: 4,
         no_direct_sun: 0,
         under_two_hours: 0,
@@ -36,7 +32,6 @@ module.exports = [
         eight_plus_hours: 1,
     },
     {
-        id: 5,
         plant_id: 5,
         no_direct_sun: 0,
         under_two_hours: 0,
@@ -45,7 +40,6 @@ module.exports = [
         eight_plus_hours: 1,
     },
     {
-    id: 6,
     plant_id: 6,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -54,7 +48,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 7,
     plant_id: 7,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -63,7 +56,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 8,
     plant_id: 8,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -72,7 +64,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 9,
     plant_id: 9,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -81,7 +72,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 10,
     plant_id: 10,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -90,7 +80,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 11,
     plant_id: 11,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -99,7 +88,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 12,
     plant_id: 12,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -108,7 +96,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 13,
     plant_id: 13,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -117,7 +104,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 14,
     plant_id: 14,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -126,7 +112,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 15,
     plant_id: 15,
     no_direct_sun: 0,
     under_two_hours: 0,
@@ -135,7 +120,6 @@ module.exports = [
     eight_plus_hours: 1,
   },
   {
-    id: 16,
     plant_id: 16,
     no_direct_sun: 1,
     under_two_hours: 1,
@@ -146,7 +130,6 @@ module.exports = [
 ]
 
 // {
-//     id: ,
 //     plant_id: ,
 //     no_direct_sun: ,
 //     under_two_hours: 0,
