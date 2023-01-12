@@ -10,6 +10,18 @@ const getList = (req, res) => {
     });
   };
 
+  const getListItems = (req, res) => {
+    knex("user_plants")
+      .where({ list_id: req.params.id })
+      .join('plant_details', "plant_details.id", "user_plants.plant_id")
+      .then((data) => {
+        res.status(200).json(data);
+      })
+      .catch((err) => {
+        res.status(400).send(`Error retrieving list items ${err}`);
+      });
+  };
+
 const postList = (req, res) => {
     console.log(req.body);          
     const list_name = req.body.list_name;
@@ -18,10 +30,10 @@ const postList = (req, res) => {
       .then(([listId]) => {
         // Use the generated list ID to insert the items into the "items" table
         const plants = req.body.plants.map(plant => {
-          plant.id
+            return {plant_id: plant.id, list_id:listId}
         });
         knex('user_plants')
-          .insert({list_id:listId, plant_id:id})
+          .insert(plants)
           .then((response) => {
         console.log(response)
         res.status(200).json(response)
@@ -34,5 +46,6 @@ const postList = (req, res) => {
 
 module.exports = {
     getList,
+    getListItems,
     postList
     };
