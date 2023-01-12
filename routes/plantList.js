@@ -4,7 +4,7 @@ const listController = require("../controllers/listController");
 
 router
     .route("/")
-        // .get(listController.getList)
+        .get(listController.getList)
         .post(listController.postList);
 
 
