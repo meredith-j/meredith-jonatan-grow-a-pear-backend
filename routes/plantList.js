@@ -9,6 +9,6 @@ router
 
 router
     .route("/:id")
-
+        .get(listController.getListItems)
 
 module.exports = router;
